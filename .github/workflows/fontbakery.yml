@@ -7,3 +7,7 @@ jobs:
     steps:
         - uses: actions/checkout@v2
         - uses: simoncozens/fontbakery-action@v1
+        - uses: actions/upload-artifact@v2
+          with:
+            name: Fontbakery reports
+            path: fontbakery.*
