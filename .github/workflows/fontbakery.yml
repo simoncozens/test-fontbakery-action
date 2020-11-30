@@ -6,4 +6,4 @@ jobs:
     name: Check the fonts with fontbakery
     steps:
         - uses: actions/checkout@v2
-        - uses: simoncozens/fontbakery-action
+        - uses: simoncozens/fontbakery-action@v1
