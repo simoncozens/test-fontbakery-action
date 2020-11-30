@@ -11,5 +11,4 @@ jobs:
           if: always()
           with:
             name: Fontbakery reports
-            path: ${{ github.workspace }}/fontbakery.*
-            if-no-files-found: error
+            path: fontbakery.*
