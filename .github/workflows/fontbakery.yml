@@ -1,0 +1,9 @@
+on: [push]
+
+jobs:
+  fontbakery:
+    runs-on: ubuntu-latest
+    name: Check the fonts with fontbakery
+    steps:
+        - uses: actions/checkout@v2
+        - uses: simoncozens/fontbakery-action
