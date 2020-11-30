@@ -7,9 +7,8 @@ jobs:
     steps:
         - uses: actions/checkout@v2
         - uses: simoncozens/fontbakery-action@v1
-        - name: WTF
-          run: find /${{ github.workspace }}/
         - uses: actions/upload-artifact@v2
+          if: always()
           with:
             name: Fontbakery reports
             path: ${{ github.workspace }}/fontbakery.*
